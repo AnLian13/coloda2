@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гадание</title>
+    <style>
+        * {
+            background-image: url("1612866265_108-p-krasivii-krasnii-fon-dlya-avatarki-152.jpg");
+        }
+h1 {
+    font-size: 100px;
+    color: white;
+}
+    </style>
+</head>
+<body>
+    <!-- <h1>Здравствуйте! Вы посетили сайт онлайн-гадания. 
+        Здесь Вы можете задать любой интересующий Вас вопрос, и карты подскажут Вам ответ на него. 
+        За толкованием карты Вы можете обратиться сюда: selena-d</h1> -->
+    <div id="image-container">
+        <img id="image">
+      </div>
+      <h1>Обновите вкладку для ответа на Ваш вопрос</h1>
+      <script>
+        const images = [
+  "Туз-пентаклей.png", 
+  "Туз-червей.png", 
+  "Туз-жезлов.png", 
+  "Туз-мечей.png", 
+  "2-бубен.png", 
+  "2-жезлов.png", 
+  "2-кубков.png",         
+  "2-мечей.png",  
+  "3-пентаклей.png",  
+  "3-мечей.png", 
+  "3-трефов.png", 
+  "3-червей.png", 
+  "4-жезлов.png", 
+  "4-мечей.png", 
+  "4-червей.png", 
+  "4-пентаклей.png", 
+  "5-кубков.png", 
+  "5-мечей.png", 
+  "5-пентаклей.png", 
+  "5-трефов.png", 
+  "6-жезлов.png", 
+  "6-кубков.png", 
+  "6-мечей.png", 
+  "6-пентаклей.png", 
+  "7-кубков.png", 
+  "7-мечей.png", 
+  "7-пентаклей.png", 
+  "7-трефов.png", 
+  "8-жезлов.png", 
+  "8-кубков.png", 
+  "8-мечей.png", 
+  "8-пентаклей.png", 
+  "9-кубков.png", 
+  "9-мечей.png", 
+  "9-пентаклей.png", 
+  "9-трефов.png",
+  "10-жезлов.png", 
+  "10-мечей.png",         
+  "10-пентаклей.png",
+  "10-червей.png",
+  "Башня.png",
+  "Влюблённые.png",
+  "Дурак.png",  
+  "Дьявол.png",
+  "Дама-пентаклей.png",
+  "Дама-кубков.png",  
+  "Дама-мечей.png",
+  "Дама-жезлов.png", 
+  "Жрица.png", 
+  "Звезда.png", 
+  "Иерофант.png", 
+  "Император.png", 
+  "Императрица.png",   
+  "Колесница.png", 
+  "Король-жезлов.png", 
+  "Король-мечей.png", 
+  "Король-кубков.png",
+  "Король-пентаклей.png", 
+  "Луна.png",
+  "Маг.png", 
+  "Мир.png", 
+  "Отшельник.png", 
+  "Повешенный.png", 
+  "Паж-пентаклей.png", 
+  "Паж-кубков.png", 
+  "Паж-мечей.png", 
+  "Паж-жезлов.png", 
+  "Рыцарь-пентаклей.png", 
+  "Рыцарь-кубков.png", 
+  "Рыцарь-мечей.png", 
+  "Рыцарь-жезлов.png", 
+  "Сила.png", 
+  "Смерть.png", 
+  "Солнце.png", 
+  "Справедливость.png", 
+  "Суд.png", 
+  "Умеренность.png", 
+  "Фортуна.png" 
+];
+function getRandomImage() {
+  const randomIndex = Math.floor(Math.random() * images.length);
+  return images[randomIndex];
+}
+
+const imageElement = document.getElementById("image");
+
+function setRandomImage() {
+  const randomImage = getRandomImage();
+  imageElement.src = randomImage;
+}
+
+window.onload = setRandomImage;
+const button = document.getElementById("change-image-button");
+
+button.addEventListener("click", () => {
+  setRandomImage();
+});
+      </script>
+</body>
+</html>
